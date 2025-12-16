@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Contact & Booking – Wanderlust</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    /* Extra styles only for contact page */
+    .contact-hero{
+      height: 70vh;
+      background: linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+      url("https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg") center/cover;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      color:white;
+      padding:20px;
+    }
+
+    .contact-info{
+      display:grid;
+      grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+      gap:24px;
+      margin-bottom:50px;
+    }
+
+    .info-card{
+      background:white;
+      padding:30px;
+      border-radius:20px;
+      box-shadow:0 20px 40px rgba(0,0,0,.08);
+      text-align:center;
+    }
+
+    .info-card h3{
+      color:#059669;
+      margin-bottom:10px;
+    }
+
+    .contact-form{
+      max-width:900px;
+      margin:auto;
+      background:white;
+      padding:40px;
+      border-radius:25px;
+      box-shadow:0 30px 60px rgba(0,0,0,.1);
+    }
+
+    .contact-form h2{
+      text-align:center;
+      margin-bottom:20px;
+    }
+
+    .form-grid{
+      display:grid;
+      grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+      gap:16px;
+    }
+
+    .contact-form textarea{
+      grid-column:1/-1;
+      min-height:130px;
+    }
+
+    .contact-form button{
+      margin-top:20px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav">
+    <div class="logo">Wanderlust</div>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="himachal.html">Himachal</a>
+      <a href="manali.html">Manali</a>
+      <a href="uttarakhand.html">Uttarakhand</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="contact-hero">
+  <div>
+    <h1>Plan Your Dream Trip With Us</h1>
+    <p>Tell us your travel plans and we’ll take care of everything</p>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="section" id="contact-section">
+
+  <!-- INFO CARDS -->
+  <div class="contact-info">
+    <div class="info-card">
+      <h3>📞 Call Us</h3>
+      <p>+91 98765 43210</p>
+      <p>+91 87654 32109</p>
+    </div>
+
+    <div class="info-card">
+      <h3>✉️ Email</h3>
+      <p>info@wanderlust.com</p>
+      <p>support@wanderlust.com</p>
+    </div>
+
+    <div class="info-card">
+      <h3>📍 Office</h3>
+      <p>New Delhi, India</p>
+      <p>Open: Mon – Sat</p>
+    </div>
+  </div>
+
+  <section class="section why-us">
+  <h2>Why Choose Wanderlust?</h2>
+  <p class="subtitle">
+    We don’t just plan trips — we craft unforgettable travel experiences with comfort, safety and memories that last forever.
+  </p>
+
+  <div class="why-grid">
+
+    <div class="why-card">
+      <div class="why-icon">🏔️</div>
+      <h3>Expert Destination Planning</h3>
+      <p>
+        Hand-crafted itineraries designed by local experts who know every hidden gem.
+      </p>
+    </div>
+
+    <div class="why-card">
+      <div class="why-icon">💰</div>
+      <h3>Best Price Guarantee</h3>
+      <p>
+        Transparent pricing with no hidden charges — premium experiences at the best value.
+      </p>
+    </div>
+
+    <div class="why-card">
+      <div class="why-icon">🛡️</div>
+      <h3>Safe & Trusted Travel</h3>
+      <p>
+        Verified hotels, trained drivers and complete on-trip assistance for peace of mind.
+      </p>
+    </div>
+
+    <div class="why-card">
+      <div class="why-icon">📞</div>
+      <h3>24/7 Support</h3>
+      <p>
+        Dedicated support before, during and after your journey — we’re always just a call away.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- FORM -->
+  <div class="contact-form">
+    <h2>Send Your Travel Enquiry</h2>
+    <form onsubmit="handleSubmit(event)">
+      <div class="form-grid">
+        <input required placeholder="Full Name">
+        <input required placeholder="Email Address">
+        <input placeholder="Phone Number">
+        <input placeholder="Destination (Manali / Himachal / Uttarakhand)">
+        <textarea required placeholder="Tell us about your trip (dates, people, budget, etc.)"></textarea>
+      </div>
+      <button>Submit Enquiry</button>
+    </form>
+  </div>
+
+</section>
+
+<footer>
+  © 2025 Wanderlust Tours & Travels | Crafted with ❤️
+</footer>
+
+<script src="js/main.js"></script>
+
+<!-- AUTO SCROLL DOWN LITTLE -->
+<script>
+  window.addEventListener("load", () => {
+    setTimeout(() => {
+      window.scrollTo({
+        top: 120,
+        behavior: "smooth"
+      });
+    }, 300);
+  });
+</script>
+
+</body>
+</html>
